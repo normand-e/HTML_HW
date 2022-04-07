@@ -21,14 +21,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/header.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/header.html",
-      "oF" : 0
-    },
     "\/deploy\/img\/Blog_Photos\/COGB.png" : {
       "ft" : 32768,
       "iS" : 108557,
@@ -269,20 +261,28 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/deploy\/main_hero.html" : {
+    "\/dev\/content\/blog.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/main_hero.html",
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/blog.html",
       "oF" : 0
     },
-    "\/deploy\/search.html" : {
+    "\/dev\/content\/gallery.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/search.html",
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/gallery.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/highlighted_links.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/highlighted_links.html",
       "oF" : 0
     },
     "\/dev\/content\/main_hero.kit" : {
