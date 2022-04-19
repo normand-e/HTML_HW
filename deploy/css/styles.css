@@ -361,6 +361,10 @@ template {
   grid-area: section;
 }
 
+#full-img {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
