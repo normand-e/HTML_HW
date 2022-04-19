@@ -1,8 +1,30 @@
 /* =============
     main hero
 ============= */
-#main_hero{
+
+#main-hero{
+
     img{
         width: 100%
     }
+
+    
+
+    
+}
+
+    
+#main-hero-grid{
+    div{
+        display: grid;
+        grid-template-columns: 16px auto 10% 16px;
+        grid-template-areas: ". text icon .";
+        section{
+            grid-area: text;
+        }
+        button{
+            grid-area: icon;
+        }
+    }
+    
 }

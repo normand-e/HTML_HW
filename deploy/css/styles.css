@@ -357,7 +357,7 @@ template {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". section .";
 }
-.base-grid > section {
+.base-grid div {
   grid-area: section;
 }
 
@@ -406,8 +406,20 @@ textarea {
 /* =============
     main hero
 ============= */
-#main_hero img {
+#main-hero img {
   width: 100%;
+}
+
+#main-hero-grid div {
+  display: grid;
+  grid-template-columns: 16px auto 10% 16px;
+  grid-template-areas: ". text icon .";
+}
+#main-hero-grid div section {
+  grid-area: text;
+}
+#main-hero-grid div button {
+  grid-area: icon;
 }
 
 /* =============
