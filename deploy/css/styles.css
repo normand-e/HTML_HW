@@ -400,6 +400,18 @@ footer ul {
   padding: 0;
 }
 
+.icon-grid section {
+  display: grid;
+  grid-template-columns: 21px auto;
+  grid-template-areas: "icon text";
+  grid-template-rows: repeat(2);
+}
+.icon-grid section section {
+  grid-area: icon;
+}
+.icon-grid section section {
+  grid-area: text;
+}
 /* =============
     blog
 ============= */

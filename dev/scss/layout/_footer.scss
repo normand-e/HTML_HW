@@ -15,20 +15,25 @@ footer{
 .icon-grid{
 
 
-    section{
 
         section{
+            display: grid;
+            grid-template-columns: 21px auto;
+            grid-template-areas: "icon text";
+            grid-template-rows: repeat(2);
             section{
- 
+                grid-area: icon;
                 img{
 
                 }
+            }
+            section{
+                grid-area: text;
                 p{
-                    
+
                 }
             }
         }
-
-    }
+    
 
 }
