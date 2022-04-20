@@ -394,6 +394,12 @@ textarea {
 /* =============
     Footer
 ============= */
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     blog
 ============= */
@@ -405,6 +411,10 @@ textarea {
 .blog section {
   grid-area: post;
 }
+.blog section section img {
+  column-span: all;
+}
+
 /* =============
     gallery
 ============= */

@@ -5,22 +5,17 @@
 .blog{
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". post .";
+    grid-template-areas:
+    ". post .";
 
 
-    
-    h1{
-    }
     section{
         grid-area: post;
-        aside{
-            img{
-
-            }
-        }
         section{
+            img{
+                column-span: all;
+            }
 
         }    
     }
 }
-//make list of blog posts????
