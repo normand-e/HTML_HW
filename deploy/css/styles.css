@@ -361,10 +361,6 @@ template {
   grid-area: section;
 }
 
-#full-img {
-  width: 100%;
-}
-
 /* =============
     Typography
 ============= */
@@ -401,12 +397,39 @@ textarea {
 /* =============
     blog
 ============= */
+.blog {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". post .";
+}
+.blog section {
+  grid-area: post;
+}
 /* =============
     gallery
 ============= */
+#gallery img {
+  width: 100%;
+}
+
 /* =============
     highlighted links
 ============= */
+.highlighted_links div {
+  display: grid;
+  grid-template-columns: 16px auto 30% 16px;
+  grid-template-areas: ". text pic .";
+}
+.highlighted_links div section {
+  grid-area: text;
+}
+.highlighted_links div aside {
+  grid-area: pic;
+}
+.highlighted_links div aside img {
+  width: 90%;
+}
+
 /* =============
     main hero
 ============= */
@@ -414,15 +437,15 @@ textarea {
   width: 100%;
 }
 
-#main-hero-grid div {
+.main-hero-grid div {
   display: grid;
   grid-template-columns: 16px auto 10% 16px;
   grid-template-areas: ". text icon .";
 }
-#main-hero-grid div section {
+.main-hero-grid div section {
   grid-area: text;
 }
-#main-hero-grid div button {
+.main-hero-grid div button {
   grid-area: icon;
 }
 

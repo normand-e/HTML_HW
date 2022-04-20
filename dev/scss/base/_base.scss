@@ -6,7 +6,8 @@
 
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". section .";
+    grid-template-areas:
+    ". section .";
 
     div{
         grid-area: section;
@@ -14,6 +15,5 @@
 
 }
 
-#full-img{
-    width: 100%;
-}
+
+

@@ -1,6 +1,25 @@
 /* =============
     highlighted links
 ============= */
-#highlighted_links{
-    
+.highlighted_links{
+
+        div{
+            display: grid;
+            grid-template-columns: 16px auto 30% 16px;
+            grid-template-areas: ". text pic .";
+            section{
+                grid-area: text;
+
+            }
+            aside{
+                img{
+                    width: 90%;
+                }
+                grid-area: pic;
+            }
+        }
+
+
+
+
 }
