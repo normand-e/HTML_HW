@@ -399,18 +399,17 @@ footer ul {
   margin: 0;
   padding: 0;
 }
-
 .icon-grid section {
   display: grid;
   grid-template-columns: 21px auto;
-  grid-template-areas: "icon text";
-  grid-template-rows: repeat(2);
 }
-.icon-grid section section {
-  grid-area: icon;
+.chunk-grid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
 }
-.icon-grid section section {
-  grid-area: text;
+.chunk-grid div {
+  grid-area: header;
 }
 /* =============
     blog
@@ -423,10 +422,6 @@ footer ul {
 .blog section {
   grid-area: post;
 }
-.blog section section img {
-  column-span: all;
-}
-
 /* =============
     gallery
 ============= */
