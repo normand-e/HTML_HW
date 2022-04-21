@@ -16,3 +16,15 @@
         }    
     }
 }
+
+aside{
+    img{
+        width: 100%;
+    }
+}
+
+
+.full-post{
+    display: grid;
+    grid-template-columns: 100%;
+}

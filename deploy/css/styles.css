@@ -422,6 +422,15 @@ footer ul {
 .blog section {
   grid-area: post;
 }
+aside img {
+  width: 100%;
+}
+
+.full-post {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
 /* =============
     gallery
 ============= */
