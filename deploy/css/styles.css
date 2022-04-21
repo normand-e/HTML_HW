@@ -407,14 +407,6 @@ footer #email-input {
   display: grid;
   grid-template-columns: 21px auto;
 }
-.chunk-grid {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
-}
-.chunk-grid div {
-  grid-area: header;
-}
 /* =============
     blog
 ============= */
