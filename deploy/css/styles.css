@@ -437,9 +437,25 @@ aside img {
 /* =============
     highlighted links
 ============= */
+#card-grid {
+  display: grid;
+}
+@media (min-width: 768px) {
+  #card-grid {
+    grid-template-columns: 16px auto auto 16px;
+    grid-template-areas: ". card1 card2 .";
+  }
+}
+#card-grid div section div {
+  grid-area: card1;
+}
+#card-grid div section div {
+  grid-area: card2;
+}
+
 .highlighted_links div {
   display: grid;
-  grid-template-columns: 16px auto 30% 16px;
+  grid-template-columns: 16px auto 85px 16px;
   grid-template-areas: ". text pic .";
 }
 .highlighted_links div section {
@@ -470,7 +486,17 @@ aside img {
 }
 @media (min-width: 768px) {
   .highlighted_links div {
-    grid-template-columns: 16px 360px 30% 16px;
+    grid-template-columns: 16px 215px 113px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .highlighted_links div {
+    grid-template-columns: 16px 342px 113px 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .highlighted_links div {
+    grid-template-columns: 16px 342px 113px 16px;
   }
 }
 

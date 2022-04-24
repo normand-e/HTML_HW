@@ -1,14 +1,40 @@
 /* =============
     highlighted links
 ============= */
-#highlighted-links {}
+#card-grid {
+    display: grid;
+
+    @include md {
+        grid-template-columns: 16px auto auto 16px;
+        grid-template-areas: ". card1 card2 .";
+    }
+
+    div {
+
+        section {
+            div {
+                grid-area: card1;
+            }
+
+        }
+
+        section {
+            div {
+                grid-area: card2;
+            }
+
+        }
+
+    }
+
+}
 
 
 .highlighted_links {
 
     div {
         display: grid;
-        grid-template-columns: 16px auto 30% 16px;
+        grid-template-columns: 16px auto 85px 16px;
         grid-template-areas: ". text pic .";
 
         section {
@@ -17,6 +43,8 @@
         }
 
         aside {
+            grid-area: pic;
+
             img {
 
                 @include sm {
@@ -36,11 +64,17 @@
                 }
             }
 
-            grid-area: pic;
+
         }
 
         @include md {
-            grid-template-columns: 16px 360px 30% 16px;
+            grid-template-columns: 16px 215px 113px 16px;
+        }
+        @include lg {
+            grid-template-columns: 16px 342px 113px 16px;
+        }
+        @include xl {
+            grid-template-columns: 16px 342px 113px 16px;
         }
     }
 
