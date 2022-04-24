@@ -448,8 +448,30 @@ aside img {
 .highlighted_links div aside {
   grid-area: pic;
 }
-.highlighted_links div aside img {
-  width: 90%;
+@media (min-width: 576px) {
+  .highlighted_links div aside img {
+    max-width: 85px;
+  }
+}
+@media (min-width: 768px) {
+  .highlighted_links div aside img {
+    max-width: 113px;
+  }
+}
+@media (min-width: 1024px) {
+  .highlighted_links div aside img {
+    max-width: 113px;
+  }
+}
+@media (min-width: 1200px) {
+  .highlighted_links div aside img {
+    max-width: 113px;
+  }
+}
+@media (min-width: 768px) {
+  .highlighted_links div {
+    grid-template-columns: 16px 360px 30% 16px;
+  }
 }
 
 /* =============
@@ -457,6 +479,25 @@ aside img {
 ============= */
 #main-hero img {
   width: 100%;
+}
+
+#banner {
+  display: grid;
+}
+@media (min-width: 768px) {
+  #banner {
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #banner {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #banner {
+    grid-template-columns: 50% auto;
+  }
 }
 
 .main-hero-grid div {
@@ -469,6 +510,11 @@ aside img {
 }
 .main-hero-grid div button {
   grid-area: icon;
+}
+@media (min-width: 1200px) {
+  .main-hero-grid div {
+    grid-template-columns: auto 495px 10% 16px;
+  }
 }
 
 /* =============

@@ -9,15 +9,29 @@
         width: 100%;
     }
 
+
+
 }
     
     
-
+#banner{
+    display: grid;
+    @include md{
+        grid-template-columns: 40% auto;
+    }
+    @include lg{
+        grid-template-columns: 50% auto;
+    }
+    @include xl{
+        grid-template-columns: 50% auto;
+    }
+}
     
 
 
  
 .main-hero-grid{
+
     div{
         display: grid;
         grid-template-columns: 16px auto 10% 16px;
@@ -28,6 +42,11 @@
         button{
             grid-area: icon;
         }
+
+        @include xl{
+            grid-template-columns: auto 495px 10% 16px;
+        }
+    
     }
     
 }

@@ -1,23 +1,48 @@
 /* =============
     highlighted links
 ============= */
-.highlighted_links{
+#highlighted-links {}
 
-        div{
-            display: grid;
-            grid-template-columns: 16px auto 30% 16px;
-            grid-template-areas: ". text pic .";
-            section{
-                grid-area: text;
 
-            }
-            aside{
-                img{
-                    width: 90%;
-                }
-                grid-area: pic;
-            }
+.highlighted_links {
+
+    div {
+        display: grid;
+        grid-template-columns: 16px auto 30% 16px;
+        grid-template-areas: ". text pic .";
+
+        section {
+            grid-area: text;
+
         }
+
+        aside {
+            img {
+
+                @include sm {
+                    max-width: 85px;
+                }
+
+                @include md {
+                    max-width: 113px;
+                }
+
+                @include lg {
+                    max-width: 113px;
+                }
+
+                @include xl {
+                    max-width: 113px;
+                }
+            }
+
+            grid-area: pic;
+        }
+
+        @include md {
+            grid-template-columns: 16px 360px 30% 16px;
+        }
+    }
 
 
 
