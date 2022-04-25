@@ -402,6 +402,39 @@ footer ul {
 footer #email-input {
   width: 100%;
 }
+@media (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "locations newsletter" "locations socials";
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: 33% auto auto;
+    grid-template-areas: "locations newsletter socials";
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    display: grid;
+    grid-template-columns: 33% auto auto;
+    grid-template-areas: "locations newsletter socials";
+  }
+}
+
+#locations {
+  grid-area: locations;
+}
+
+#newsletter {
+  grid-area: newsletter;
+}
+
+#socials {
+  grid-area: socials;
+}
 
 .icon-grid section {
   display: grid;
