@@ -9,30 +9,33 @@
     @include md{
         display: grid;
         grid-template-columns: 50% auto;
+        grid-template-areas: "first second";
     }
     
     @include lg{
         display: grid;
         grid-template-columns: 60% auto;
+        grid-template-areas: "first second";
+        
     }
     
     @include xl{
         display: grid;
         grid-template-columns: 60% auto;
         grid-template-areas: 
-        "1 2"
-        "1 3";
-        #first{
-            grid-area: 1;
-        }
-        #second{
-            grid-area: 2;
-        }
-        #third{
-            grid-area: 3;
-        }
+        "first second"
+        "first third";
+        
         
     }
     
 }
-
+#first{
+    grid-area: first;
+}
+#second{
+    grid-area: second;
+}
+#third{
+    grid-area: third;
+}

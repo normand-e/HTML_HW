@@ -1,30 +1,61 @@
 /* =============
     blog
 ============= */
-
-.blog{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas:
-    ". post .";
-
-
-    section{
-        grid-area: post;
-        section{
-            
-        }    
+#blog-grid {
+    @include md {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "first first second second"
+        "third third fourth fourth"
+        ". fifth fifth .";       
+    }
+    @include lg {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+        "first first second second third third"
+        ". fourth fourth fifth fifth .";
+        gap: 16px;     
+    }
+    @include xl {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+        "first first second second third third"
+        ". fourth fourth fifth fifth .";
+        gap: 16px;     
     }
 }
 
-aside{
-    img{
+#first {
+    grid-area: first;
+
+}
+
+#second {
+    grid-area: second;  
+
+}
+
+#third {
+    grid-area: third;
+  
+}
+
+#fourth {
+    grid-area: fourth; 
+    
+}
+
+#fifth {
+    grid-area: fifth;
+     
+}
+
+
+aside {
+    img {
         width: 100%;
     }
-}
-
-
-.full-post{
-    display: grid;
-    grid-template-columns: 100%;
 }

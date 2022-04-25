@@ -6,26 +6,29 @@
     @include md {
         display: grid;
         grid-template-columns: 50% auto;
-        grid-template-areas: "card1 card2";
-        background-color: blue;
+        gap: 16px;
 
-        #card1 {
-            background-color: purple;
-            grid-area: card1;
-
-        }
-
-        #card2 {
-            background-color: green;
-            grid-area: card2;
-
-
-        }
-
+    }
+    
+    @include lg {
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 16px;
 
     }
 
-
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 485px 485px auto;
+        gap: 16px;
+        grid-template-areas: ". card1 card2 .";
+        #card1{
+            grid-area: card1;
+        }
+        #card2{
+            grid-area: card2;
+        }
+    }
 
 
     // div {
@@ -47,7 +50,10 @@
     // }
 
 }
-
+.highlighted_links{
+    display: grid;
+    grid-template-columns: 75% auto;
+}
 // .highlighted_links{
 //     display: grid;
 //     grid-template-columns: 70% auto;
