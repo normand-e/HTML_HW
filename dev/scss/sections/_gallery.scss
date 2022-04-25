@@ -5,4 +5,31 @@
     img{
         width: 100%;
     }
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+
+    @include lg{
+        display: grid;
+        grid-template-columns: 60% auto;
+    }
+
+    @include xl{
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-areas: 
+        "1 2"
+        "1 3";
+        #first{
+            grid-area: 1;
+        }
+        #second{
+            grid-area: 2;
+        }
+        #third{
+            grid-area: 3;
+        }
+    }
 }
+

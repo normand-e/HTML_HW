@@ -2,83 +2,117 @@
     highlighted links
 ============= */
 #card-grid {
-    display: grid;
 
     @include md {
-        grid-template-columns: 16px auto auto 16px;
-        grid-template-areas: ". card1 card2 .";
-    }
-
-    div {
-
-        section {
-            div {
-                grid-area: card1;
-            }
-
-        }
-
-        section {
-            div {
-                grid-area: card2;
-            }
-
-        }
-
-    }
-
-}
-
-
-.highlighted_links {
-
-    div {
         display: grid;
-        grid-template-columns: 16px auto 85px 16px;
-        grid-template-areas: ". text pic .";
+        grid-template-columns: 50% auto;
+        grid-template-areas: "card1 card2";
+        background-color: blue;
 
-        section {
-            grid-area: text;
+        #card1 {
+            background-color: purple;
+            grid-area: card1;
 
         }
 
-        aside {
-            grid-area: pic;
-
-            img {
-
-                @include sm {
-                    max-width: 85px;
-                }
-
-                @include md {
-                    max-width: 113px;
-                }
-
-                @include lg {
-                    max-width: 113px;
-                }
-
-                @include xl {
-                    max-width: 113px;
-                }
-            }
+        #card2 {
+            background-color: green;
+            grid-area: card2;
 
 
         }
 
-        @include md {
-            grid-template-columns: 16px 215px 113px 16px;
-        }
-        @include lg {
-            grid-template-columns: 16px 342px 113px 16px;
-        }
-        @include xl {
-            grid-template-columns: 16px 342px 113px 16px;
-        }
+
     }
 
 
 
 
+    // div {
+    //     display: grid;
+
+    //     @include md {
+    //         grid-template-columns: 16px auto auto 16px;
+    //         grid-template-areas: ". card1 card2 .";
+
+    //     }
+
+    //     section {
+    //         div {
+    //             grid-area: card1;
+    //         }
+
+    //     }
+
+    // }
+
 }
+
+// .highlighted_links{
+//     display: grid;
+//     grid-template-columns: 70% auto;
+//     grid-template-areas: "copy pic";
+//     div{
+//         section{
+//             grid-area: copy;
+//         }
+//         aside{
+//             grid-area: pic;
+//         }
+//     }
+
+// }
+
+
+// .highlighted_links {
+
+//     div {
+//         display: grid;
+//         grid-template-columns: 16px auto 85px 16px;
+//         grid-template-areas: ". text pic .";
+
+//         section {
+//             grid-area: text;
+
+//         }
+
+//         aside {
+//             grid-area: pic;
+
+//             img {
+
+//                 @include sm {
+//                     max-width: 85px;
+//                 }
+
+//                 @include md {
+//                     max-width: 113px;
+//                 }
+
+//                 @include lg {
+//                     max-width: 113px;
+//                 }
+
+//                 @include xl {
+//                     max-width: 113px;
+//                 }
+//             }
+
+
+//         }
+
+//         @include md {
+//             grid-template-columns: 16px 215px 113px 16px;
+//         }
+//         @include lg {
+//             grid-template-columns: 16px 342px 113px 16px;
+//         }
+//         @include xl {
+//             grid-template-columns: 16px 342px 113px 16px;
+//         }
+//     }
+
+
+
+
+// }
