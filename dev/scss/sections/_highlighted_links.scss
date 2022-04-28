@@ -3,29 +3,33 @@
 ============= */
 #card-grid {
 
+
     @include md {
         display: grid;
-        grid-template-columns: 50% auto;
-        gap: 16px;
+        grid-template-columns:  16px 50% 16px auto 16px;
+        
+        grid-template-areas: ". card1 . card2 .";
+        #card1 {
+            grid-area: card1;
+        }
+
+        #card2 {
+            grid-area: card2;
+        }
 
     }
-    
-    @include lg {
-        display: grid;
-        grid-template-columns: 50% auto;
-        gap: 16px;
 
-    }
 
     @include xl {
         display: grid;
-        grid-template-columns: auto 485px 485px auto;
-        gap: 16px;
-        grid-template-areas: ". card1 card2 .";
-        #card1{
+        grid-template-columns: auto 485px 16px 485px auto;
+        grid-template-areas: ". card1 . card2 .";
+
+        #card1 {
             grid-area: card1;
         }
-        #card2{
+
+        #card2 {
             grid-area: card2;
         }
     }
@@ -33,15 +37,18 @@
 
 
 }
-.highlighted_links{
+
+.highlighted_links {
     display: grid;
     grid-template-columns: 75% auto;
+
 }
 
-h2{
+h2 {
     font-weight: 400;
     font-size: rem-calc(24);
-    @include md{
+
+    @include md {
         font-size: rem-calc(32);
     }
 }

@@ -6,13 +6,26 @@ footer {
     h1 {
         margin: 0 0 16px 0;
     }
+    h2{
+        margin: 0 0 20px 0;
+    }
 
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
 
-        li {}
+        li {
+            div{
+                section{
+                    div{
+                        section{
+                            margin: 0 0 20px 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -62,9 +75,7 @@ footer {
             a{
                 padding-right: 24px;
             }
-            // display: grid;
-            // grid-template-columns: repeat(4, 1fr);
-            // gap: 16px;
+
         }
     }
 }

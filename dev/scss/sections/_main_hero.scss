@@ -9,31 +9,32 @@
         width: 100%;
     }
 
+
     @include xl {
         #right-section {
-            
+
             display: grid;
             grid-template-columns: 16px 485px auto;
             grid-template-areas: ". content .";
 
-            div{
+            div {
                 grid-area: content;
             }
         }
 
-        
+
 
         #left-section {
-            
-                display: grid;
-                grid-template-columns: auto 485px 16px;
-                grid-template-areas: ". content .";
 
-                div{
-                    grid-area: content;
-                }
+            display: grid;
+            grid-template-columns: auto 485px 16px;
+            grid-template-areas: ". content .";
 
-            
+            div {
+                grid-area: content;
+            }
+
+
 
         }
     }
@@ -44,12 +45,30 @@
 #banner {
     display: grid;
 
+    section {
+        div {
+            section {
+                margin: 10px 0;
+            }
+        }
+    }
+
     @include md {
         grid-template-columns: 40% auto;
+
+        section {
+            div {
+                section {
+                    margin: 20px 0;
+                }
+            }
+        }
+
     }
 
     @include lg {
         grid-template-columns: 50% auto;
+
     }
 
     @include xl {

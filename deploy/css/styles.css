@@ -443,16 +443,26 @@ textarea {
 /* =============
     Header
 ============= */
+header img {
+  margin: 24px 0;
+}
+
 /* =============
     Footer
 ============= */
 footer h1 {
   margin: 0 0 16px 0;
 }
+footer h2 {
+  margin: 0 0 20px 0;
+}
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+footer ul li div section div section {
+  margin: 0 0 20px 0;
 }
 @media (min-width: 768px) {
   footer {
@@ -599,23 +609,21 @@ aside img {
 @media (min-width: 768px) {
   #card-grid {
     display: grid;
-    grid-template-columns: 50% auto;
-    gap: 16px;
+    grid-template-columns: 16px 50% 16px auto 16px;
+    grid-template-areas: ". card1 . card2 .";
   }
-}
-@media (min-width: 1024px) {
-  #card-grid {
-    display: grid;
-    grid-template-columns: 50% auto;
-    gap: 16px;
+  #card-grid #card1 {
+    grid-area: card1;
+  }
+  #card-grid #card2 {
+    grid-area: card2;
   }
 }
 @media (min-width: 1200px) {
   #card-grid {
     display: grid;
-    grid-template-columns: auto 485px 485px auto;
-    gap: 16px;
-    grid-template-areas: ". card1 card2 .";
+    grid-template-columns: auto 485px 16px 485px auto;
+    grid-template-areas: ". card1 . card2 .";
   }
   #card-grid #card1 {
     grid-area: card1;
@@ -668,9 +676,15 @@ h2 {
 #banner {
   display: grid;
 }
+#banner section div section {
+  margin: 10px 0;
+}
 @media (min-width: 768px) {
   #banner {
     grid-template-columns: 40% auto;
+  }
+  #banner section div section {
+    margin: 20px 0;
   }
 }
 @media (min-width: 1024px) {
@@ -699,3 +713,16 @@ h2 {
 /* =============
     search
 ============= */
+#search > div {
+  margin: 24px 0;
+}
+@media (min-width: 1200px) {
+  #search {
+    display: grid;
+    grid-template-columns: auto 980px auto;
+    grid-template-areas: ". search .";
+  }
+  #search div {
+    grid-area: search;
+  }
+}

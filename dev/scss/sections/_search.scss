@@ -2,5 +2,15 @@
     search
 ============= */
 #search{
-
+ >div{
+     margin: 24px 0;
+ }
+ @include xl{
+     display: grid;
+     grid-template-columns: auto 980px auto;
+     grid-template-areas: ". search .";
+     div{
+        grid-area: search;
+     }
+ }
 }
