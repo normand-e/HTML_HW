@@ -593,6 +593,24 @@ aside img {
 #main-hero img {
   width: 100%;
 }
+@media (min-width: 1200px) {
+  #main-hero #right-section {
+    display: grid;
+    grid-template-columns: 16px 485px auto;
+    grid-template-areas: ". content .";
+  }
+  #main-hero #right-section div {
+    grid-area: content;
+  }
+  #main-hero #left-section {
+    display: grid;
+    grid-template-columns: auto 485px 16px;
+    grid-template-areas: ". content .";
+  }
+  #main-hero #left-section div {
+    grid-area: content;
+  }
+}
 
 #banner {
   display: grid;

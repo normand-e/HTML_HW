@@ -9,33 +9,34 @@
         width: 100%;
     }
 
-    // @include xl {
-    //     #right-section {
-    //         div {
-    //             display: grid;
-    //             grid-template-columns: 16px 720px auto;
-    //         }
+    @include xl {
+        #right-section {
+            
+            display: grid;
+            grid-template-columns: 16px 485px auto;
+            grid-template-areas: ". content .";
 
-    //     }
+            div{
+                grid-area: content;
+            }
+        }
 
-    //     #left-section {
-    //         div {
-    //             display: grid;
-    //             grid-template-columns: auto 720px 16px;
-    //             grid-template-areas: ". text button";
+        
 
-    //             section {
-    //                 grid-area: text;
-    //             }
+        #left-section {
+            
+                display: grid;
+                grid-template-columns: auto 485px 16px;
+                grid-template-areas: ". content .";
 
-    //             button {
-    //                 grid-area: button;
-    //             }
+                div{
+                    grid-area: content;
+                }
 
-    //         }
+            
 
-    //     }
-    // }
+        }
+    }
 
 }
 
