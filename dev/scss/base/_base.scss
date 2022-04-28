@@ -17,3 +17,15 @@
 
 
 
+.global-spacing{
+    margin: 24px 0px 0px 0px;
+    @include md{
+        margin: 32px 0px 0px 0px;
+    }
+    @include lg{
+        margin: 48px 0px 0px 0px;
+    }
+    @include xl{
+        margin: 64px 0px 0px 0px;
+    }
+}

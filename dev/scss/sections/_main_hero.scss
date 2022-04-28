@@ -4,49 +4,77 @@
 
 
 
-#main-hero{
-    img{
+#main-hero {
+    img {
         width: 100%;
     }
 
+    // @include xl {
+    //     #right-section {
+    //         div {
+    //             display: grid;
+    //             grid-template-columns: 16px 720px auto;
+    //         }
 
+    //     }
+
+    //     #left-section {
+    //         div {
+    //             display: grid;
+    //             grid-template-columns: auto 720px 16px;
+    //             grid-template-areas: ". text button";
+
+    //             section {
+    //                 grid-area: text;
+    //             }
+
+    //             button {
+    //                 grid-area: button;
+    //             }
+
+    //         }
+
+    //     }
+    // }
 
 }
-    
-    
-#banner{
+
+
+#banner {
     display: grid;
-    @include md{
+
+    @include md {
         grid-template-columns: 40% auto;
     }
-    @include lg{
+
+    @include lg {
         grid-template-columns: 50% auto;
     }
-    @include xl{
+
+    @include xl {
         grid-template-columns: 50% auto;
     }
 }
-    
 
 
- 
-.main-hero-grid{
 
-    div{
+
+.main-hero-grid {
+
+    div {
         display: grid;
         grid-template-columns: 16px auto 10% 16px;
         grid-template-areas: ". text icon .";
-        section{
+
+        section {
             grid-area: text;
         }
-        button{
+
+        button {
             grid-area: icon;
         }
-
-        @include xl{
-            grid-template-columns: auto 50% 10% 16px;
-        }
-    
     }
-    
+
+
+
 }

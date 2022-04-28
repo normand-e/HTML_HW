@@ -361,6 +361,25 @@ template {
   grid-area: section;
 }
 
+.global-spacing {
+  margin: 24px 0px 0px 0px;
+}
+@media (min-width: 768px) {
+  .global-spacing {
+    margin: 32px 0px 0px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .global-spacing {
+    margin: 48px 0px 0px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .global-spacing {
+    margin: 64px 0px 0px 0px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -604,11 +623,6 @@ aside img {
 }
 .main-hero-grid div button {
   grid-area: icon;
-}
-@media (min-width: 1200px) {
-  .main-hero-grid div {
-    grid-template-columns: auto 50% 10% 16px;
-  }
 }
 
 /* =============
