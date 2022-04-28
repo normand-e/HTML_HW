@@ -31,94 +31,17 @@
     }
 
 
-    // div {
-    //     display: grid;
-
-    //     @include md {
-    //         grid-template-columns: 16px auto auto 16px;
-    //         grid-template-areas: ". card1 card2 .";
-
-    //     }
-
-    //     section {
-    //         div {
-    //             grid-area: card1;
-    //         }
-
-    //     }
-
-    // }
 
 }
 .highlighted_links{
     display: grid;
     grid-template-columns: 75% auto;
 }
-// .highlighted_links{
-//     display: grid;
-//     grid-template-columns: 70% auto;
-//     grid-template-areas: "copy pic";
-//     div{
-//         section{
-//             grid-area: copy;
-//         }
-//         aside{
-//             grid-area: pic;
-//         }
-//     }
 
-// }
-
-
-// .highlighted_links {
-
-//     div {
-//         display: grid;
-//         grid-template-columns: 16px auto 85px 16px;
-//         grid-template-areas: ". text pic .";
-
-//         section {
-//             grid-area: text;
-
-//         }
-
-//         aside {
-//             grid-area: pic;
-
-//             img {
-
-//                 @include sm {
-//                     max-width: 85px;
-//                 }
-
-//                 @include md {
-//                     max-width: 113px;
-//                 }
-
-//                 @include lg {
-//                     max-width: 113px;
-//                 }
-
-//                 @include xl {
-//                     max-width: 113px;
-//                 }
-//             }
-
-
-//         }
-
-//         @include md {
-//             grid-template-columns: 16px 215px 113px 16px;
-//         }
-//         @include lg {
-//             grid-template-columns: 16px 342px 113px 16px;
-//         }
-//         @include xl {
-//             grid-template-columns: 16px 342px 113px 16px;
-//         }
-//     }
-
-
-
-
-// }
+h2{
+    font-weight: 400;
+    font-size: rem-calc(24);
+    @include md{
+        font-size: rem-calc(32);
+    }
+}

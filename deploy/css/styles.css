@@ -352,6 +352,15 @@ template {
 /* =============
     Base
 ============= */
+body h1, body h2, body h3, body h4 {
+  padding: 0;
+  margin: 0;
+}
+body p {
+  padding: 0;
+  margin: 0;
+}
+
 .base-grid {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -383,6 +392,14 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
 /* =============
     Buttons
 ============= */
@@ -413,13 +430,13 @@ textarea {
 /* =============
     Footer
 ============= */
+footer h1 {
+  margin: 0 0 16px 0;
+}
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-footer #email-input {
-  width: 100%;
 }
 @media (min-width: 768px) {
   footer {
@@ -450,6 +467,11 @@ footer #email-input {
 #newsletter {
   grid-area: newsletter;
 }
+@media (min-width: 1024px) {
+  #newsletter h1 {
+    text-align: center;
+  }
+}
 
 #socials {
   grid-area: socials;
@@ -459,6 +481,7 @@ footer #email-input {
   display: grid;
   grid-template-columns: 21px auto;
 }
+
 /* =============
     blog
 ============= */
@@ -585,6 +608,16 @@ aside img {
 .highlighted_links {
   display: grid;
   grid-template-columns: 75% auto;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 /* =============

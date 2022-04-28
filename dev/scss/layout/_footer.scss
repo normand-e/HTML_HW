@@ -2,75 +2,70 @@
     Footer
 ============= */
 
-footer{
-
-    ul{
+footer {
+    h1{
+        margin: 0 0 16px 0;
+    }
+    ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
 
-        li{
-
-        }
+        li {}
     }
 
-    #email-input{
-        width: 100%;
-    }
+
 
     @include md {
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas:
-        "locations newsletter"
-        "locations socials";
+            "locations newsletter"
+            "locations socials";
     }
+
     @include lg {
         display: grid;
         grid-template-columns: 33% auto auto;
         grid-template-areas:
-        "locations newsletter socials";
+            "locations newsletter socials";
     }
+
     @include xl {
         display: grid;
         grid-template-columns: 33% auto auto;
         grid-template-areas:
-        "locations newsletter socials";
+            "locations newsletter socials";
     }
 }
 
-#locations{
+#locations {
     grid-area: locations;
+
 }
-#newsletter{
+
+#newsletter {
     grid-area: newsletter;
+
+    h1 {
+        @include lg {
+            text-align: center;
+        }
+    }
 }
-#socials{
+
+#socials {
     grid-area: socials;
 }
 
-.icon-grid{
+.icon-grid {
 
 
-        section{
-            display: grid;
-            grid-template-columns: 21px auto;
+    section {
+        display: grid;
+        grid-template-columns: 21px auto;
+    }
 
-            section{
 
-                img{
-
-                }
-            }
-            section{
- 
-                p{
-
-                }
-            }
-        }
-    
-    
 
 }
-
