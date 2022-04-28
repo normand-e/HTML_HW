@@ -3,9 +3,10 @@
 ============= */
 
 footer {
-    h1{
+    h1 {
         margin: 0 0 16px 0;
     }
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -56,6 +57,16 @@ footer {
 
 #socials {
     grid-area: socials;
+    div{
+        section{
+            a{
+                padding-right: 24px;
+            }
+            // display: grid;
+            // grid-template-columns: repeat(4, 1fr);
+            // gap: 16px;
+        }
+    }
 }
 
 .icon-grid {
@@ -64,8 +75,10 @@ footer {
     section {
         display: grid;
         grid-template-columns: 21px auto;
-    }
+        gap: 16px;
 
+
+    }
 
 
 }
