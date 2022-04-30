@@ -2,29 +2,36 @@
     blog
 ============= */
 #blog-grid {
+    
+    h2 {
+        font-weight: 600;
+    }
+
     @include md {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
-        "first first second second"
-        "third third fourth fourth"
-        ". fifth fifth .";       
+            "first first second second"
+            "third third fourth fourth"
+            ". fifth fifth .";
     }
+
     @include lg {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
-        "first first second second third third"
-        ". fourth fourth fifth fifth .";
-        gap: 16px;     
+            "first first second second third third"
+            ". fourth fourth fifth fifth .";
+        gap: 16px;
     }
+
     @include xl {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
-        "first first second second third third"
-        ". fourth fourth fifth fifth .";
-        gap: 16px;     
+            "first first second second third third"
+            ". fourth fourth fifth fifth .";
+        gap: 16px;
     }
 }
 
@@ -34,28 +41,43 @@
 }
 
 #second {
-    grid-area: second;  
+    grid-area: second;
 
 }
 
 #third {
     grid-area: third;
-  
+
 }
 
 #fourth {
-    grid-area: fourth; 
-    
+    grid-area: fourth;
+
 }
 
 #fifth {
     grid-area: fifth;
-     
+
 }
+
 
 
 aside {
     img {
         width: 100%;
+    }
+
+
+}
+
+#blog-title {
+    font-size: rem-calc(24);
+
+    @include md {
+        font-size: rem-calc(32);
+    }
+
+    @include lg {
+        font-size: rem-calc(48);
     }
 }

@@ -3,11 +3,17 @@
 ============= */
 
 footer {
+    p {
+        font-size: rem-calc(12);
+    }
+
     h1 {
         margin: 0 0 16px 0;
     }
-    h2{
+
+    h3 {
         margin: 0 0 20px 0;
+        font-weight: 600;
     }
 
     ul {
@@ -16,10 +22,10 @@ footer {
         padding: 0;
 
         li {
-            div{
-                section{
-                    div{
-                        section{
+            div {
+                section {
+                    div {
+                        section {
                             margin: 0 0 20px 0;
                         }
                     }
@@ -51,45 +57,51 @@ footer {
         grid-template-areas:
             "locations newsletter socials";
     }
-}
 
-#locations {
-    grid-area: locations;
 
-}
+    #locations {
+        grid-area: locations;
 
-#newsletter {
-    grid-area: newsletter;
-
-    h1 {
-        @include lg {
-            text-align: center;
-        }
     }
-}
 
-#socials {
-    grid-area: socials;
-    div{
-        section{
-            a{
-                padding-right: 24px;
+    #newsletter {
+        grid-area: newsletter;
+
+        h1 {
+            @include lg {
+                text-align: center;
             }
-
         }
     }
-}
 
-.icon-grid {
+    #socials {
+        grid-area: socials;
+
+        div {
+            section {
+                a {
+                    padding-right: 24px;
+                }
+
+            }
+        }
+    }
+    
+    .footer-titles {
+        font-size: rem-calc(24px);
+    }
+
+    .icon-grid {
 
 
-    section {
-        display: grid;
-        grid-template-columns: 21px auto;
-        gap: 16px;
+        section {
+            display: grid;
+            grid-template-columns: 21px auto;
+            gap: 16px;
+
+
+        }
 
 
     }
-
-
 }

@@ -355,11 +355,17 @@ template {
 body h1 {
   margin: 0 0 10px 0;
 }
-body h2, body h3, body h4 {
+body h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+body h2, body h4 {
   padding: 0;
   margin: 0;
 }
 body p {
+  font-size: 1rem;
   padding: 0;
   margin: 0;
 }
@@ -450,11 +456,15 @@ header img {
 /* =============
     Footer
 ============= */
+footer p {
+  font-size: 0.75rem;
+}
 footer h1 {
   margin: 0 0 16px 0;
 }
-footer h2 {
+footer h3 {
   margin: 0 0 20px 0;
+  font-weight: 600;
 }
 footer ul {
   list-style-type: none;
@@ -485,28 +495,27 @@ footer ul li div section div section {
     grid-template-areas: "locations newsletter socials";
   }
 }
-
-#locations {
+footer #locations {
   grid-area: locations;
 }
-
-#newsletter {
+footer #newsletter {
   grid-area: newsletter;
 }
 @media (min-width: 1024px) {
-  #newsletter h1 {
+  footer #newsletter h1 {
     text-align: center;
   }
 }
-
-#socials {
+footer #socials {
   grid-area: socials;
 }
-#socials div section a {
+footer #socials div section a {
   padding-right: 24px;
 }
-
-.icon-grid section {
+footer .footer-titles {
+  font-size: 1.5rem;
+}
+footer .icon-grid section {
   display: grid;
   grid-template-columns: 21px auto;
   gap: 16px;
@@ -515,6 +524,9 @@ footer ul li div section div section {
 /* =============
     blog
 ============= */
+#blog-grid h2 {
+  font-weight: 600;
+}
 @media (min-width: 768px) {
   #blog-grid {
     display: grid;
@@ -563,6 +575,20 @@ aside img {
   width: 100%;
 }
 
+#blog-title {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  #blog-title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  #blog-title {
+    font-size: 3rem;
+  }
+}
+
 /* =============
     gallery
 ============= */
@@ -606,6 +632,19 @@ aside img {
 /* =============
     highlighted links
 ============= */
+#card-grid h2 {
+  margin: 16px 0 12px 0;
+}
+@media (min-width: 768px) {
+  #card-grid h2 {
+    margin: 24px 0 12px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #card-grid h2 {
+    margin: 48px 0 12px 0;
+  }
+}
 @media (min-width: 768px) {
   #card-grid {
     display: grid;
@@ -653,6 +692,9 @@ h2 {
 ============= */
 #main-hero img {
   width: 100%;
+}
+#main-hero h3 {
+  font-size: 1.125rem;
 }
 @media (min-width: 1200px) {
   #main-hero #right-section {

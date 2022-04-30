@@ -2,8 +2,17 @@
     highlighted links
 ============= */
 #card-grid {
+    
+    h2{
+        margin: 16px 0 12px 0;
+        @include md{
+            margin: 24px 0 12px 0;
+        }
+        @include lg{
+            margin: 48px 0 12px 0;
+        }
 
-
+    }
     @include md {
         display: grid;
         grid-template-columns:  16px 50% 16px auto 16px;
@@ -11,10 +20,12 @@
         grid-template-areas: ". card1 . card2 .";
         #card1 {
             grid-area: card1;
+           
         }
 
         #card2 {
             grid-area: card2;
+  
         }
 
     }
@@ -27,6 +38,7 @@
 
         #card1 {
             grid-area: card1;
+            
         }
 
         #card2 {
@@ -48,7 +60,10 @@ h2 {
     font-weight: 400;
     font-size: rem-calc(24);
 
+
     @include md {
         font-size: rem-calc(32);
     }
+
+    
 }
