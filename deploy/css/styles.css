@@ -460,7 +460,22 @@ footer p {
   font-size: 0.75rem;
 }
 footer h1 {
-  margin: 0 0 16px 0;
+  margin: 12px 0 8px 0;
+}
+@media (min-width: 768px) {
+  footer h1 {
+    margin: 24px 0 12px 0;
+  }
+}
+@media (min-width: 1024px) {
+  footer h1 {
+    margin: 42px 0 12px 0;
+  }
+}
+@media (min-width: 1200px) {
+  footer h1 {
+    margin: 64px 0 12px 0;
+  }
 }
 footer h3 {
   margin: 0 0 20px 0;
@@ -470,9 +485,6 @@ footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-footer ul li div section div section {
-  margin: 0 0 20px 0;
 }
 @media (min-width: 768px) {
   footer {
@@ -484,15 +496,8 @@ footer ul li div section div section {
 @media (min-width: 1024px) {
   footer {
     display: grid;
-    grid-template-columns: 33% auto auto;
-    grid-template-areas: "locations newsletter socials";
-  }
-}
-@media (min-width: 1200px) {
-  footer {
-    display: grid;
-    grid-template-columns: 33% auto auto;
-    grid-template-areas: "locations newsletter socials";
+    grid-template-columns: auto 321px 321px 321px auto;
+    grid-template-areas: ". locations newsletter socials .";
   }
 }
 footer #locations {
@@ -509,6 +514,11 @@ footer #newsletter {
 footer #socials {
   grid-area: socials;
 }
+@media (min-width: 1024px) {
+  footer #socials h1 {
+    text-align: right;
+  }
+}
 footer #socials div section a {
   padding-right: 24px;
 }
@@ -519,6 +529,9 @@ footer .icon-grid section {
   display: grid;
   grid-template-columns: 21px auto;
   gap: 16px;
+}
+footer .social-margin {
+  margin: 0 0 20px 0;
 }
 
 /* =============

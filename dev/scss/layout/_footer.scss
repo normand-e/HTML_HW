@@ -8,7 +8,16 @@ footer {
     }
 
     h1 {
-        margin: 0 0 16px 0;
+        margin: 12px 0 8px 0;
+        @include md{
+            margin: 24px 0 12px 0;
+        }
+        @include lg{
+            margin: 42px 0 12px 0;
+        }
+        @include xl{
+            margin: 64px 0 12px 0;
+        }
     }
 
     h3 {
@@ -21,17 +30,7 @@ footer {
         margin: 0;
         padding: 0;
 
-        li {
-            div {
-                section {
-                    div {
-                        section {
-                            margin: 0 0 20px 0;
-                        }
-                    }
-                }
-            }
-        }
+
     }
 
 
@@ -46,17 +45,11 @@ footer {
 
     @include lg {
         display: grid;
-        grid-template-columns: 33% auto auto;
+        grid-template-columns: auto 321px 321px 321px auto;
         grid-template-areas:
-            "locations newsletter socials";
+            ". locations newsletter socials .";
     }
 
-    @include xl {
-        display: grid;
-        grid-template-columns: 33% auto auto;
-        grid-template-areas:
-            "locations newsletter socials";
-    }
 
 
     #locations {
@@ -76,6 +69,12 @@ footer {
 
     #socials {
         grid-area: socials;
+
+        h1{
+            @include lg {
+                text-align: right;
+            }
+        }
 
         div {
             section {
@@ -103,5 +102,9 @@ footer {
         }
 
 
+    }
+
+    .social-margin{
+        margin: 0 0 20px 0;
     }
 }
