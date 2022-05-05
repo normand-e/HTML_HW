@@ -2,6 +2,7 @@
     highlighted links
 ============= */
 #card-grid {
+
     
     h2{
         margin: 16px 0 12px 0;
@@ -19,6 +20,7 @@
         
         grid-template-areas: ". card1 . card2 .";
         #card1 {
+            margin-bottom: 0;
             grid-area: card1;
            
         }
@@ -66,4 +68,14 @@ h2 {
     }
 
     
+}
+
+#card1{
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: var(--light-green);
+}
+#card2{
+    padding: 16px;
+    background-color: var(--light-green);
 }

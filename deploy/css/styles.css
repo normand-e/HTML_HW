@@ -16,6 +16,7 @@ html {
   --light-green: #D8E0D5;
   --dark-pink: #E9BBBE;
   --light-pink: #FFE1E3;
+  --light-gray: #F8FBFF;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -362,20 +363,24 @@ template {
 ============= */
 body h1 {
   margin: 0 0 10px 0;
+  color: var(--dark-green);
 }
 body h3 {
   padding: 0;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.125rem;
+  color: var(--dark-green);
 }
 body h2, body h4 {
   padding: 0;
   margin: 0;
+  color: var(--dark-green);
 }
 body p {
   font-size: 1rem;
   padding: 0;
   margin: 0;
+  color: var(--dark-green);
 }
 
 .base-grid {
@@ -433,6 +438,18 @@ h1 {
 /* =============
     Buttons
 ============= */
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.standard-button {
+  background-color: var(--light-pink);
+  border: none;
+  color: var(--dark-green);
+  padding: 6px 14px;
+}
+
 /* =============
     Forms
 ============= */
@@ -511,6 +528,13 @@ footer ul {
     grid-template-areas: ". locations newsletter socials .";
   }
 }
+@media (min-width: 1440px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto 480px 480px 480px auto;
+    grid-template-areas: ". locations newsletter socials .";
+  }
+}
 footer #locations {
   grid-area: locations;
 }
@@ -556,6 +580,7 @@ footer .social-margin {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "first first second second" "third third fourth fourth" ". fifth fifth .";
+    gap: 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -566,37 +591,36 @@ footer .social-margin {
     gap: 16px;
   }
 }
-@media (min-width: 1200px) {
-  #blog-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "first first second second third third" ". fourth fourth fifth fifth .";
-    gap: 16px;
-  }
-}
 
 #first {
+  background-color: var(--light-gray);
   grid-area: first;
 }
 
 #second {
+  background-color: var(--light-gray);
   grid-area: second;
 }
 
 #third {
+  background-color: var(--light-gray);
   grid-area: third;
 }
 
 #fourth {
+  background-color: var(--light-gray);
   grid-area: fourth;
 }
 
 #fifth {
+  background-color: var(--light-gray);
   grid-area: fifth;
 }
 
 aside img {
   width: 100%;
+  border: 0;
+  display: block;
 }
 
 #blog-title {
@@ -610,6 +634,17 @@ aside img {
 @media (min-width: 1024px) {
   #blog-title {
     font-size: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #xl-grid-container {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". content .";
+  }
+  #xl-grid-container > div {
+    grid-area: content;
   }
 }
 
@@ -633,7 +668,7 @@ aside img {
     grid-template-areas: "first second";
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #gallery {
     display: grid;
     grid-template-columns: 60% auto;
@@ -641,15 +676,15 @@ aside img {
   }
 }
 
-#first {
+#first-gallery {
   grid-area: first;
 }
 
-#second {
+#second-gallery {
   grid-area: second;
 }
 
-#third {
+#third-gallery {
   grid-area: third;
 }
 
@@ -676,6 +711,7 @@ aside img {
     grid-template-areas: ". card1 . card2 .";
   }
   #card-grid #card1 {
+    margin-bottom: 0;
     grid-area: card1;
   }
   #card-grid #card2 {
@@ -711,16 +747,33 @@ h2 {
   }
 }
 
+#card1 {
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: var(--light-green);
+}
+
+#card2 {
+  padding: 16px;
+  background-color: var(--light-green);
+}
+
 /* =============
     main hero
 ============= */
-#main-hero img {
+#main-hero > section > img {
   width: 100%;
+  border: 0;
+  display: block;
+}
+#main-hero button {
+  background-color: transparent;
+  border: none;
 }
 #main-hero h3 {
   font-size: 1.125rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #main-hero #right-section {
     display: grid;
     grid-template-columns: 16px 485px auto;
@@ -758,11 +811,6 @@ h2 {
     grid-template-columns: 50% auto;
   }
 }
-@media (min-width: 1200px) {
-  #banner {
-    grid-template-columns: 50% auto;
-  }
-}
 
 .main-hero-grid div {
   display: grid;
@@ -776,11 +824,38 @@ h2 {
   grid-area: icon;
 }
 
+#left-section {
+  background-color: var(--dark-pink);
+}
+
+#right-section {
+  background-color: var(--light-pink);
+}
+
 /* =============
     search
 ============= */
-#search > div {
+#search div {
   margin: 24px 0;
+  display: flex;
+}
+#search div input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1.5px solid var(--dark-pink);
+  color: var(dark-green);
+  margin-right: 16px;
+}
+#search div button {
+  background-color: var(--light-pink);
+  border: none;
+  padding: 6px 10px 4px;
+}
+@media (min-width: 768px) {
+  #search div button {
+    padding: 10px 16px 8px;
+  }
 }
 @media (min-width: 1200px) {
   #search {

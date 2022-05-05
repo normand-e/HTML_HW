@@ -5,20 +5,24 @@
 body{
     h1{
         margin: 0 0 10px 0;
+        color: var(--dark-green);
     }
     h3{
         padding: 0;
         margin: 0;
-        font-size: rem-calc(16);
+        font-size: rem-calc(18);
+        color: var(--dark-green);
     }
     h2, h4{
         padding: 0;
         margin: 0;
+        color: var(--dark-green);
     }
     p{
         font-size: rem-calc(16);
         padding: 0;
         margin: 0;
+        color: var(--dark-green);
     }
     
 }

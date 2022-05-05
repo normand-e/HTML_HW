@@ -15,6 +15,8 @@ $screen-lg-min: 1024px;
 // Large desktops
 $screen-xl-min: 1200px;
 
+$screen-xxl-min: 1440px;
+
 
 // Colors
 // $white: #fff;
@@ -24,7 +26,9 @@ $screen-xl-min: 1200px;
     --dark-green: #204000;
     --green: #8F9F80;
     --light-green: #D8E0D5;
-    
+
     --dark-pink: #E9BBBE;
     --light-pink: #FFE1E3;
+
+    --light-gray: #F8FBFF;
 }

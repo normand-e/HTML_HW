@@ -1,16 +1,35 @@
 /* =============
     search
 ============= */
-#search{
- >div{
-     margin: 24px 0;
- }
- @include xl{
-     display: grid;
-     grid-template-columns: auto 980px auto;
-     grid-template-areas: ". search .";
-     div{
-        grid-area: search;
-     }
- }
+#search {
+    div {
+        margin: 24px 0;
+        display: flex;
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1.5px solid var(--dark-pink);
+            color: var(dark-green);
+            margin-right: 16px;
+        }
+        button{
+            background-color: var(--light-pink);
+            border: none;
+            padding: 6px 10px 4px;
+            @include md{
+                padding: 10px 16px 8px;
+            }
+        }
+    }
+
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 980px auto;
+        grid-template-areas: ". search .";
+
+        div {
+            grid-area: search;
+        }
+    }
 }

@@ -50,7 +50,12 @@ footer {
             ". locations newsletter socials .";
     }
 
-
+    @include xxl {
+        display: grid;
+        grid-template-columns: auto 480px 480px 480px auto;
+        grid-template-areas:
+            ". locations newsletter socials .";
+    }
 
     #locations {
         grid-area: locations;

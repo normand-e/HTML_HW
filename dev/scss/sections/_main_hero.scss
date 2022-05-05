@@ -5,15 +5,25 @@
 
 
 #main-hero {
-    img {
-        width: 100%;
+    >section {
+        >img {
+            width: 100%;
+            border: 0;
+            display: block;
+        }
     }
-    h3{
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+    h3 {
         font-size: rem-calc(18);
     }
 
 
-    @include xl {
+    @include xxl {
         #right-section {
 
             display: grid;
@@ -46,6 +56,7 @@
 
 
 #banner {
+
     display: grid;
 
     section {
@@ -74,9 +85,7 @@
 
     }
 
-    @include xl {
-        grid-template-columns: 50% auto;
-    }
+
 }
 
 
@@ -100,4 +109,12 @@
 
 
 
+}
+
+#left-section {
+    background-color: var(--dark-pink);
+}
+
+#right-section {
+    background-color: var(--light-pink);
 }

@@ -1,3 +1,15 @@
 /* =============
     Buttons
 ============= */
+
+button{
+    margin: 0;
+    padding: 0;
+}
+
+.standard-button{
+    background-color: var(--light-pink);
+    border: none;
+    color: var(--dark-green);
+    padding: 6px 14px;
+}

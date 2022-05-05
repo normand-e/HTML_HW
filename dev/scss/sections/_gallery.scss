@@ -19,7 +19,7 @@
         
     }
     
-    @include xl{
+    @include xxl{
         display: grid;
         grid-template-columns: 60% auto;
         grid-template-areas: 
@@ -30,12 +30,15 @@
     }
     
 }
-#first{
+#first-gallery{
     grid-area: first;
+
 }
-#second{
+#second-gallery{
     grid-area: second;
 }
-#third{
+#third-gallery{
+
     grid-area: third;
+
 }
