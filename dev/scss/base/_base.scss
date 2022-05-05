@@ -41,6 +41,20 @@ body{
 
 }
 
+.blog-16-margin{
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas:
+        ". section .";
+    
+        div{
+            grid-area: section;
+        }
+    }
+    
+
+}
 
 
 .global-spacing{
@@ -72,5 +86,12 @@ body{
                 margin: 0 0 16px 0;
             }
         }
+    }
+}
+
+.hide{
+    display: none;
+    @include xxl{
+        display: block;
     }
 }

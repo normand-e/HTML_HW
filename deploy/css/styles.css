@@ -392,6 +392,17 @@ body p {
   grid-area: section;
 }
 
+@media (min-width: 768px) {
+  .blog-16-margin {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". section .";
+  }
+  .blog-16-margin div {
+    grid-area: section;
+  }
+}
+
 .global-spacing {
   margin: 24px 0px 0px 0px;
 }
@@ -422,6 +433,15 @@ body p {
 }
 .blog-spacing section div button {
   margin: 0 0 16px 0;
+}
+
+.hide {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .hide {
+    display: block;
+  }
 }
 
 /* =============
@@ -484,10 +504,16 @@ header img {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--dark-green);
+  padding-bottom: 36px;
+}
 footer p {
+  color: var(--light-green);
   font-size: 0.75rem;
 }
 footer h1 {
+  color: var(--light-green);
   margin: 12px 0 8px 0;
 }
 @media (min-width: 768px) {
@@ -506,6 +532,7 @@ footer h1 {
   }
 }
 footer h3 {
+  color: var(--light-green);
   margin: 0 0 20px 0;
   font-weight: 600;
 }
@@ -513,6 +540,9 @@ footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+footer ul li div section div > section {
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   footer {
@@ -542,9 +572,32 @@ footer #newsletter {
   grid-area: newsletter;
 }
 @media (min-width: 1024px) {
-  footer #newsletter h1 {
+  footer #newsletter div h1 {
     text-align: center;
   }
+}
+footer #newsletter div input {
+  background-color: var(--green);
+  border: 0;
+  color: var(--dark-green);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 8px;
+}
+footer #newsletter div ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--dark-green);
+}
+footer #newsletter div :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--dark-green);
+}
+footer #newsletter div ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--dark-green);
+}
+footer #newsletter div button {
+  margin-top: 16px;
 }
 footer #socials {
   grid-area: socials;
@@ -653,6 +706,8 @@ aside img {
 ============= */
 #gallery img {
   width: 100%;
+  border: 0;
+  display: block;
 }
 @media (min-width: 768px) {
   #gallery {
@@ -674,18 +729,18 @@ aside img {
     grid-template-columns: 60% auto;
     grid-template-areas: "first second" "first third";
   }
-}
-
-#first-gallery {
-  grid-area: first;
-}
-
-#second-gallery {
-  grid-area: second;
-}
-
-#third-gallery {
-  grid-area: third;
+  #gallery #first-gallery {
+    grid-area: first;
+  }
+  #gallery #second-gallery {
+    grid-area: second;
+  }
+  #gallery #third-gallery {
+    grid-area: third;
+  }
+  #gallery #third-gallery img {
+    border: 0;
+  }
 }
 
 /* =============
@@ -835,8 +890,10 @@ h2 {
 /* =============
     search
 ============= */
-#search div {
+#search {
   margin: 24px 0;
+}
+#search div {
   display: flex;
 }
 #search div input {
@@ -844,8 +901,20 @@ h2 {
   box-sizing: border-box;
   border: none;
   border-bottom: 1.5px solid var(--dark-pink);
-  color: var(dark-green);
+  color: var(--dark-green);
   margin-right: 16px;
+}
+#search div ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--dark-green);
+}
+#search div :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--dark-green);
+}
+#search div ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--dark-green);
 }
 #search div button {
   background-color: var(--light-pink);

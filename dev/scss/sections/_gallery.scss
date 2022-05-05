@@ -1,44 +1,52 @@
 /* =============
     gallery
 ============= */
-#gallery{
-    img{
+#gallery {
+
+    img {
         width: 100%;
+        border: 0;
+        display: block;
     }
 
-    @include md{
+
+    @include md {
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas: "first second";
     }
-    
-    @include lg{
+
+    @include lg {
         display: grid;
         grid-template-columns: 60% auto;
         grid-template-areas: "first second";
-        
+
     }
-    
-    @include xxl{
+
+    @include xxl {
         display: grid;
         grid-template-columns: 60% auto;
-        grid-template-areas: 
-        "first second"
-        "first third";
-        
-        
+        grid-template-areas:
+            "first second"
+            "first third";
+
+        #first-gallery {
+            grid-area: first;
+
+        }
+
+        #second-gallery {
+            grid-area: second;
+        }
+
+        #third-gallery {
+            img{
+                border: 0;
+            }
+            grid-area: third;
+
+        }
+
     }
-    
-}
-#first-gallery{
-    grid-area: first;
-
-}
-#second-gallery{
-    grid-area: second;
-}
-#third-gallery{
-
-    grid-area: third;
 
 }

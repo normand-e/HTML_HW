@@ -3,24 +3,33 @@
 ============= */
 
 footer {
+    background-color: var(--dark-green);
+    padding-bottom: 36px;
+
     p {
+        color: var(--light-green);
         font-size: rem-calc(12);
     }
 
     h1 {
+        color: var(--light-green);
         margin: 12px 0 8px 0;
-        @include md{
+
+        @include md {
             margin: 24px 0 12px 0;
         }
-        @include lg{
+
+        @include lg {
             margin: 42px 0 12px 0;
         }
-        @include xl{
+
+        @include xl {
             margin: 64px 0 12px 0;
         }
     }
 
     h3 {
+        color: var(--light-green);
         margin: 0 0 20px 0;
         font-weight: 600;
     }
@@ -29,6 +38,18 @@ footer {
         list-style-type: none;
         margin: 0;
         padding: 0;
+
+        li {
+            div {
+                section {
+                    div {
+                        >section {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
 
 
     }
@@ -65,9 +86,44 @@ footer {
     #newsletter {
         grid-area: newsletter;
 
-        h1 {
-            @include lg {
-                text-align: center;
+
+        div {
+            h1 {
+                @include lg {
+                    text-align: center;
+                }
+            }
+
+            input {
+                background-color: var(--green);
+                border: 0;
+                color: var(--dark-green);
+                width: 100%;
+                box-sizing: border-box;
+                padding: 16px 8px;
+
+
+        
+            }
+
+            ::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: var(--dark-green);
+            }
+    
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: var(--dark-green);
+            }
+    
+            ::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: var(--dark-green);
+            }
+
+            button {
+                margin-top: 16px;
+
             }
         }
     }
@@ -75,7 +131,7 @@ footer {
     #socials {
         grid-area: socials;
 
-        h1{
+        h1 {
             @include lg {
                 text-align: right;
             }
@@ -90,7 +146,7 @@ footer {
             }
         }
     }
-    
+
     .footer-titles {
         font-size: rem-calc(24px);
     }
@@ -109,7 +165,7 @@ footer {
 
     }
 
-    .social-margin{
+    .social-margin {
         margin: 0 0 20px 0;
     }
 }

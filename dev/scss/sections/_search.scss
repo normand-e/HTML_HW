@@ -2,22 +2,43 @@
     search
 ============= */
 #search {
+    margin: 24px 0;
     div {
-        margin: 24px 0;
+    
         display: flex;
-        input{
+
+        input {
             width: 100%;
             box-sizing: border-box;
             border: none;
             border-bottom: 1.5px solid var(--dark-pink);
-            color: var(dark-green);
+            color: var(--dark-green);
             margin-right: 16px;
         }
-        button{
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: var(--dark-green);
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: var(--dark-green);
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: var(--dark-green);
+        }
+
+
+
+        button {
             background-color: var(--light-pink);
             border: none;
             padding: 6px 10px 4px;
-            @include md{
+
+            @include md {
                 padding: 10px 16px 8px;
             }
         }
