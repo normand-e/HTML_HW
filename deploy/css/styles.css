@@ -813,10 +813,23 @@ h2 {
 /* =============
     main hero
 ============= */
-#main-hero > section > img {
-  width: 100%;
-  border: 0;
-  display: block;
+#main-hero #main-hero-img {
+  width: 100vw;
+  height: 70vw;
+  background-image: url("../img/body/hero.png");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+@media (min-width: 1024px) {
+  #main-hero #main-hero-img {
+    height: 60vw;
+  }
+}
+@media (min-width: 1440px) {
+  #main-hero #main-hero-img {
+    height: 50vw;
+    background-position: 100% 60%;
+  }
 }
 #main-hero button {
   background-color: transparent;
