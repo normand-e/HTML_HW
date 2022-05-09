@@ -86,6 +86,11 @@ aside {
 }
 
 #xl-grid-container{
+    //adding this instead of 'blog-16-margin' repeat base grid just for md and above
+    @include md{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
     @include xxl{
         display: grid;
         grid-template-columns: auto 1440px auto;

@@ -5,6 +5,8 @@
 
 
 #main-hero {
+
+    //format hero
     >section {
         >img {
             width: 100%;
@@ -13,44 +15,18 @@
         }
     }
 
-button{
-    background-color: transparent;
-    border: none;
-}
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: var(--dark-green);
+        margin-left: auto;
+    }
 
     h3 {
         font-size: rem-calc(18);
     }
 
-
-    @include xxl {
-        #right-section {
-
-            display: grid;
-            grid-template-columns: 16px 485px auto;
-            grid-template-areas: ". content .";
-
-            div {
-                grid-area: content;
-            }
-        }
-
-
-
-        #left-section {
-
-            display: grid;
-            grid-template-columns: auto 485px 16px;
-            grid-template-areas: ". content .";
-
-            div {
-                grid-area: content;
-            }
-
-
-
-        }
-    }
 
 }
 
@@ -60,23 +36,23 @@ button{
     display: grid;
 
     section {
-        div {
-            section {
-                margin: 10px 0;
-            }
+
+        >section {
+            margin: 10px 0;
         }
     }
+
 
     @include md {
         grid-template-columns: 40% auto;
 
         section {
-            div {
-                section {
-                    margin: 20px 0;
-                }
+
+            >section {
+                margin: 20px 0;
             }
         }
+
 
     }
 
@@ -91,30 +67,100 @@ button{
 
 
 
-.main-hero-grid {
+// .main-hero-grid {
 
-    div {
-        display: grid;
-        grid-template-columns: 16px auto 10% 16px;
-        grid-template-areas: ". text icon .";
+//     div {
+//         display: grid;
+//         grid-template-columns: 16px auto 10% 16px;
+//         grid-template-areas: ". text icon .";
 
-        section {
-            grid-area: text;
-        }
+//         >section {
+//             grid-area: text;
+//         }
 
-        button {
-            grid-area: icon;
-        }
-    }
+//         button {
+//             grid-area: icon;
+//         }
+//     }
 
 
 
-}
+// }
 
 #left-section {
     background-color: var(--dark-pink);
+
+    @include xxl {
+        display: grid;
+        grid-template-columns: auto 485px 16px;
+        grid-template-areas: ". content .";
+
+        >div {
+            grid-area: content;
+        }
+    }
 }
 
 #right-section {
     background-color: var(--light-pink);
+
+    @include xxl {
+        display: grid;
+        grid-template-columns: 16px 485px auto;
+        grid-template-areas: ". content .";
+
+        >div {
+            grid-area: content;
+        }
+    }
+}
+
+
+.flex-align {
+    display: flex;
+    align-items: center;
+
+    #first-sec {
+        margin-left: 16px;
+    }
+
+    #second-sec {
+        margin-left: auto;
+        margin-right: 16px;
+  
+            display: flex;
+            align-items: center;
+    
+        
+    }
+
+    
+
+
+
+}
+
+
+.hide-details {
+
+    //hiding 'details' for sm and md
+    button {
+
+
+        span {
+            display: none;
+
+            @include lg {
+                display: block;
+
+
+
+            }
+        }
+
+        img {
+            margin-left: 8px;
+
+        }
+    }
 }
