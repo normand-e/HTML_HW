@@ -741,23 +741,10 @@ aside img {
 /* =============
     highlighted links
 ============= */
-#card-grid h2 {
-  margin: 16px 0 12px 0;
-}
-@media (min-width: 768px) {
-  #card-grid h2 {
-    margin: 24px 0 12px 0;
-  }
-}
-@media (min-width: 1024px) {
-  #card-grid h2 {
-    margin: 48px 0 12px 0;
-  }
-}
 @media (min-width: 768px) {
   #card-grid {
     display: grid;
-    grid-template-columns: 16px 50% 16px auto 16px;
+    grid-template-columns: 16px 47.5% 16px auto 16px;
     grid-template-areas: ". card1 . card2 .";
   }
   #card-grid #card1 {
@@ -798,14 +785,43 @@ h2 {
 }
 
 #card1 {
-  margin-bottom: 16px;
-  padding: 16px;
   background-color: var(--light-green);
+  margin-bottom: 16px;
+}
+#card1 aside {
+  align-self: center;
 }
 
 #card2 {
-  padding: 16px;
   background-color: var(--light-green);
+}
+#card2 aside {
+  align-self: center;
+}
+
+.in-card-flex {
+  background-color: var(--light-green);
+  display: flex;
+}
+.in-card-flex section {
+  padding: 16px 0 16px 16px;
+}
+@media (min-width: 768px) {
+  .in-card-flex section {
+    padding: 24px 0 24px 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .in-card-flex section {
+    padding: 36px 0 36px 16px;
+  }
+}
+.in-card-flex section h2 {
+  margin-bottom: 8px;
+}
+.in-card-flex aside {
+  margin-left: auto;
+  padding-right: 16px;
 }
 
 /* =============
