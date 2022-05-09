@@ -486,8 +486,27 @@ textarea {
 header {
   background-color: var(--dark-green);
 }
+header div {
+  display: flex;
+  align-items: center;
+}
+header div section {
+  margin-left: 8px;
+}
 header img {
   margin: 24px 0;
+}
+header h1 {
+  color: var(--light-pink);
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+header p {
+  color: var(--light-pink);
+  font-size: 0.625rem;
+  margin: 0;
+  padding: 0;
 }
 
 /* =============
@@ -842,6 +861,12 @@ h2 {
 
 #card1 {
   margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  #card2 > section {
+    margin-right: 72px;
+  }
 }
 
 .in-card-flex {
