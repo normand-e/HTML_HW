@@ -424,11 +424,11 @@ body p {
   margin: 0 0 16px 0;
 }
 
-.hide img {
+.hide {
   display: none;
 }
 @media (min-width: 1440px) {
-  .hide img {
+  .hide {
     display: block;
   }
 }
@@ -820,7 +820,8 @@ h2 {
   background-color: transparent;
   border: none;
   color: var(--dark-green);
-  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 #main-hero h3 {
   font-size: 1.125rem;
@@ -829,15 +830,9 @@ h2 {
 #banner {
   display: grid;
 }
-#banner section > section {
-  margin: 10px 0;
-}
 @media (min-width: 768px) {
   #banner {
     grid-template-columns: 40% auto;
-  }
-  #banner section > section {
-    margin: 20px 0;
   }
 }
 @media (min-width: 1024px) {
@@ -874,7 +869,9 @@ h2 {
   }
 }
 
-.flex-align {
+.flex-align div {
+  margin-top: 16px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
 }
@@ -884,8 +881,6 @@ h2 {
 .flex-align #second-sec {
   margin-left: auto;
   margin-right: 16px;
-  display: flex;
-  align-items: center;
 }
 
 .hide-details button span {

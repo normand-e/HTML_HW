@@ -77,17 +77,12 @@ body{
 
 .hide{
 
+    display: none;
     
-
-    //for hero links 'details' button
-    
-
-    //for gallery image
-    img{
-        display: none;
         @include xxl{
-            display: block;
+           display: block;
+            
         }
-    }
+    
     
 }

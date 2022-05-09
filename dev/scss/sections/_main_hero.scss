@@ -20,7 +20,8 @@
         background-color: transparent;
         border: none;
         color: var(--dark-green);
-        margin-left: auto;
+        display: flex;
+        align-items: center;
     }
 
     h3 {
@@ -35,25 +36,8 @@
 
     display: grid;
 
-    section {
-
-        >section {
-            margin: 10px 0;
-        }
-    }
-
-
     @include md {
         grid-template-columns: 40% auto;
-
-        section {
-
-            >section {
-                margin: 20px 0;
-            }
-        }
-
-
     }
 
     @include lg {
@@ -61,36 +45,18 @@
 
     }
 
-
 }
 
 
 
 
-// .main-hero-grid {
 
-//     div {
-//         display: grid;
-//         grid-template-columns: 16px auto 10% 16px;
-//         grid-template-areas: ". text icon .";
-
-//         >section {
-//             grid-area: text;
-//         }
-
-//         button {
-//             grid-area: icon;
-//         }
-//     }
-
-
-
-// }
 
 #left-section {
     background-color: var(--dark-pink);
 
     @include xxl {
+        
         display: grid;
         grid-template-columns: auto 485px 16px;
         grid-template-areas: ". content .";
@@ -117,8 +83,13 @@
 
 
 .flex-align {
-    display: flex;
-    align-items: center;
+    div{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+    }
+    
 
     #first-sec {
         margin-left: 16px;
@@ -128,8 +99,6 @@
         margin-left: auto;
         margin-right: 16px;
   
-            display: flex;
-            align-items: center;
     
         
     }
