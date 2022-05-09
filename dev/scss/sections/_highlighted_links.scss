@@ -2,8 +2,7 @@
     highlighted links
 ============= */
 #card-grid {
-
-
+  
 
     
     @include md {
@@ -46,11 +45,7 @@
 }
 
 
-.highlighted_links {
-    display: grid;
-    grid-template-columns: 75% auto;
 
-}
 
 h2 {
     font-weight: 400;
@@ -65,22 +60,11 @@ h2 {
 }
 
 #card1{
-
-    background-color: var(--light-green);
+    //between the two sections spacing for sm
     margin-bottom: 16px;
-    aside{
-        align-self: center;
-    }
     
 }
-#card2{
-   
-    background-color: var(--light-green);
-    aside{
-        align-self: center;
-    }
 
-}
 
 
 
@@ -102,6 +86,7 @@ h2 {
       
     }
     aside{
+        align-self: center;
         margin-left: auto;
         padding-right: 16px;
     }

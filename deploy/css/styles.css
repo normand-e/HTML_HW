@@ -769,11 +769,6 @@ aside img {
   }
 }
 
-.highlighted_links {
-  display: grid;
-  grid-template-columns: 75% auto;
-}
-
 h2 {
   font-weight: 400;
   font-size: 1.5rem;
@@ -785,18 +780,7 @@ h2 {
 }
 
 #card1 {
-  background-color: var(--light-green);
   margin-bottom: 16px;
-}
-#card1 aside {
-  align-self: center;
-}
-
-#card2 {
-  background-color: var(--light-green);
-}
-#card2 aside {
-  align-self: center;
 }
 
 .in-card-flex {
@@ -820,6 +804,7 @@ h2 {
   margin-bottom: 8px;
 }
 .in-card-flex aside {
+  align-self: center;
   margin-left: auto;
   padding-right: 16px;
 }
