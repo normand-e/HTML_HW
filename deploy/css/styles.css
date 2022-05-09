@@ -739,6 +739,66 @@ aside img {
   }
 }
 
+#first-gallery {
+  width: 100vw;
+  height: 80vw;
+  background-image: url("../img/body/AnitBaby.png");
+  background-size: cover;
+  background-position: 0% 100%;
+}
+@media (min-width: 768px) {
+  #first-gallery {
+    width: 50vw;
+    background-position: 50% 100%;
+  }
+}
+@media (min-width: 1024px) {
+  #first-gallery {
+    width: 60vw;
+    height: 60vw;
+    background-position: 50% 100%;
+  }
+}
+
+#second-gallery {
+  width: 100vw;
+  height: 140vw;
+  background-image: url("../img/body/AnotherLife.png");
+  background-size: cover;
+  background-position: 10% 100%;
+}
+@media (min-width: 768px) {
+  #second-gallery {
+    width: 50vw;
+    height: 80vw;
+    background-position: 0% 100%;
+  }
+}
+@media (min-width: 1024px) {
+  #second-gallery {
+    width: 40vw;
+    height: 60vw;
+    background-position: 100% 100%;
+  }
+}
+@media (min-width: 1440px) {
+  #second-gallery {
+    width: 40vw;
+    height: 30vw;
+    background-position: 50% 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #third-gallery {
+    width: 40vw;
+    height: 30vw;
+    background-image: url("../img/body/TKAM_Mask.png");
+    background-size: cover;
+    background-position: 20% 100%;
+  }
+}
+
 /* =============
     highlighted links
 ============= */

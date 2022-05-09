@@ -40,13 +40,69 @@
         }
 
         #third-gallery {
-            img{
+            img {
                 border: 0;
             }
+
             grid-area: third;
 
         }
 
     }
 
+}
+
+
+#first-gallery {
+    width: 100vw;
+    height: 80vw;
+    background-image: url('../img/body/AnitBaby.png');
+    background-size: cover;
+    background-position: 0% 100%;
+    @include md{
+        width: 50vw;
+        background-position: 50% 100%;
+    }
+    @include lg{
+        width: 60vw;
+        height: 60vw;
+        background-position: 50% 100%;
+
+    }
+}
+
+#second-gallery{
+    width: 100vw;
+    height: 140vw;
+    background-image: url('../img/body/AnotherLife.png');
+    background-size: cover;
+    background-position: 10% 100%;
+    @include md{
+        width: 50vw;
+        height: 80vw;
+        background-position: 0% 100%;
+    }
+    @include lg{
+        width: 40vw;
+        height: 60vw;
+        background-position: 100% 100%;
+
+    }
+    @include xxl{
+        width: 40vw;
+        height: 30vw;
+        background-position: 50% 100%;
+
+    }
+}
+
+#third-gallery{
+    @include xl{
+        width: 40vw;
+        height: 30vw;
+        background-image: url('../img/body/TKAM_Mask.png');
+        background-size: cover;
+        background-position: 20% 100%;
+    }
+    
 }
