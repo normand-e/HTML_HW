@@ -555,11 +555,11 @@ footer p {
 }
 footer h1 {
   color: var(--light-green);
-  margin: 12px 0 8px 0;
+  margin: 24px 0 12px 0;
 }
 @media (min-width: 768px) {
   footer h1 {
-    margin: 24px 0 12px 0;
+    margin: 36px 0 12px 0;
   }
 }
 @media (min-width: 1024px) {
