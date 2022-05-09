@@ -131,20 +131,16 @@ footer {
     #socials {
         grid-area: socials;
 
-        h1 {
-            @include lg {
-                text-align: right;
-            }
+        section{
+            display: flex;
+            gap: 32px;
+        }
+        @include lg {
+            text-align: right;
+            justify-content: flex-end;
         }
 
-        div {
-            section {
-                a {
-                    padding-right: 24px;
-                }
-
-            }
-        }
+        
     }
 
     .footer-titles {
@@ -152,20 +148,17 @@ footer {
     }
 
     .icon-grid {
-
-
-        section {
-            display: grid;
-            grid-template-columns: 21px auto;
-            gap: 16px;
-
-
+//align icons next to address/phone
+        div{
+            section{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 16px;
+                }
+            }
         }
 
 
-    }
-
-    .social-margin {
-        margin: 0 0 20px 0;
     }
 }

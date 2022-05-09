@@ -591,24 +591,25 @@ footer #newsletter div button {
 footer #socials {
   grid-area: socials;
 }
-@media (min-width: 1024px) {
-  footer #socials h1 {
-    text-align: right;
-  }
+footer #socials section {
+  display: flex;
+  gap: 32px;
 }
-footer #socials div section a {
-  padding-right: 24px;
+@media (min-width: 1024px) {
+  footer #socials {
+    text-align: right;
+    justify-content: flex-end;
+  }
 }
 footer .footer-titles {
   font-size: 1.5rem;
 }
-footer .icon-grid section {
-  display: grid;
-  grid-template-columns: 21px auto;
-  gap: 16px;
+footer .icon-grid div section {
+  display: flex;
+  align-items: center;
 }
-footer .social-margin {
-  margin: 0 0 20px 0;
+footer .icon-grid div section img {
+  margin-right: 16px;
 }
 
 /* =============
