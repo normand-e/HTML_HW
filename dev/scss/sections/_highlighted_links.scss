@@ -2,25 +2,25 @@
     highlighted links
 ============= */
 #card-grid {
-  
 
-    
+
+
     @include md {
         display: grid;
-        grid-template-columns:  16px 47.5% 16px auto 16px;
-        
+        grid-template-columns: 16px 47.5% 16px auto 16px;
+
         grid-template-areas: ". card1 . card2 .";
 
         #card1 {
-            
+
             margin-bottom: 0;
             grid-area: card1;
-           
+
         }
 
         #card2 {
             grid-area: card2;
-  
+
         }
 
     }
@@ -33,7 +33,7 @@
 
         #card1 {
             grid-area: card1;
-            
+
         }
 
         #card2 {
@@ -56,36 +56,41 @@ h2 {
         font-size: rem-calc(32);
     }
 
-    
+
 }
 
-#card1{
+#card1 {
     //between the two sections spacing for sm
     margin-bottom: 16px;
-    
+
 }
 
 
 
 
-.in-card-flex{
-    
+.in-card-flex {
+
     background-color: var(--light-green);
     display: flex;
-    section{
+
+    section {
         padding: 16px 0 16px 16px;
-        @include md{
+
+        @include md {
             padding: 24px 0 24px 16px;
         }
-        @include xl{
+
+        @include xl {
             padding: 36px 0 36px 16px;
         }
-        h2{
+
+        h2 {
             margin-bottom: 8px;
         }
-      
+
     }
-    aside{
+
+    aside {
         align-self: center;
         margin-left: auto;
         padding-right: 16px;
