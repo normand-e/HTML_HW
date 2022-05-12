@@ -3,7 +3,72 @@
 ============= */
 
 
-a:link, a:visited{
+a:link,
+a:visited {
     text-decoration: none;
     transition: 0.25s;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+
+    background-color: var(--light-pink);
+    height: 100vh;
+    padding: 16px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    box-sizing: border-box;
+
+    @include lg {
+        display: block;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+
+
+    aside {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: var(--dark-green);
+        }
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        border: 1px solid red;
+
+        ul {
+            li {
+                border: 1px solid green;
+                a:link, a:visited {
+                    color: var(--dark-green);
+                    display: inline-block;
+                    padding-bottom: 32px;
+
+                    &:hover,
+                    &:active {
+                        color: var(--dark-pink);
+
+                    }
+                }
+            }
+        }
+    }
+
+
 }

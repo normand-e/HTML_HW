@@ -16,7 +16,6 @@ button{
     cursor: pointer;
     &:hover{
         background-color: var(--dark-pink);
-        
         transition: 0.25s;
     }
 }

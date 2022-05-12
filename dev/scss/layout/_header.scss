@@ -4,13 +4,31 @@
 
 header {
     background-color: var(--dark-green);
-    div{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    #logo-header{
         display: flex;
         align-items: center;
         section{
             margin-left: 8px;
+        }
     
-            
+    }
+
+    div{
+        display: grid;
+        grid-template-columns: 50% auto;
+
+        //hide logo type on small
+        section{
+            section{
+                display: none;
+                @include md{
+                    display: block;
+                }
+            }
         }
     }
 
@@ -58,5 +76,18 @@ header {
 
     
 
+
+    #burger-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #burger{
+        background-color: transparent;
+        color: var(--light-pink);
+        border: 1px solid red;
+        padding: 16px;
+    }
 
 }
