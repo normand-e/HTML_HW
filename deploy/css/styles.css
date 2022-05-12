@@ -447,6 +447,10 @@ body p {
   transition: 0.25s;
 }
 
+.show-menu {
+  display: block !important;
+}
+
 /* =============
     Typography
 ============= */
@@ -512,6 +516,7 @@ ul {
 }
 
 nav {
+  display: none;
   background-color: var(--light-pink);
   height: 100vh;
   padding: 16px;
@@ -524,7 +529,8 @@ nav {
 @media (min-width: 1024px) {
   nav {
     display: block;
-    height: 100%;
+    background-color: transparent;
+    height: 50%;
     padding: 0;
     position: relative;
     width: 100%;
@@ -543,17 +549,50 @@ nav section {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
-  border: 1px solid red;
 }
-nav section ul li {
-  border: 1px solid green;
+nav section ul {
+  height: 100%;
+  padding-top: 20%;
 }
-nav section ul li a:link, nav section ul li a:visited {
+@media (min-width: 1024px) {
+  nav section ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+  nav section ul li {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+    text-align: right;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  nav section ul li {
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-left: 16px;
+    padding-left: 24px;
+  }
+}
+nav section a:link,
+nav section a:visited {
   color: var(--dark-green);
   display: inline-block;
   padding-bottom: 32px;
+  font-size: 1.25rem;
 }
-nav section ul li a:link:hover, nav section ul li a:link:active, nav section ul li a:visited:hover, nav section ul li a:visited:active {
+@media (min-width: 1024px) {
+  nav section a:link,
+nav section a:visited {
+    color: var(--light-pink);
+    font-size: 1.5rem;
+  }
+}
+nav section a:link:hover, nav section a:link:active,
+nav section a:visited:hover,
+nav section a:visited:active {
   color: var(--dark-pink);
 }
 
@@ -567,11 +606,11 @@ header {
   top: 0;
   width: 100%;
 }
-header #logo-header {
+header #logo-container {
   display: flex;
   align-items: center;
 }
-header #logo-header section {
+header #logo-container section {
   margin-left: 8px;
 }
 header div {
@@ -639,7 +678,12 @@ header #burger-container {
   justify-content: flex-end;
   align-items: center;
 }
-header #burger {
+@media (min-width: 1024px) {
+  header #burger-container {
+    display: none;
+  }
+}
+header #burger-container #burger-btn {
   background-color: transparent;
   color: var(--light-pink);
   border: 1px solid red;

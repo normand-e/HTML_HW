@@ -16,7 +16,7 @@ ul {
 }
 
 nav {
-
+    display: none;
     background-color: var(--light-pink);
     height: 100vh;
     padding: 16px;
@@ -28,7 +28,8 @@ nav {
 
     @include lg {
         display: block;
-        height: 100%;
+        background-color: transparent;
+        height: 50%;
         padding: 0;
         position: relative;
         width: 100%;
@@ -50,25 +51,64 @@ nav {
         display: flex;
         justify-content: center;
         margin-top: 10vh;
-        border: 1px solid red;
+
 
         ul {
-            li {
-                border: 1px solid green;
-                a:link, a:visited {
-                    color: var(--dark-green);
-                    display: inline-block;
-                    padding-bottom: 32px;
 
-                    &:hover,
-                    &:active {
-                        color: var(--dark-pink);
+            height: 100%;
+            padding-top: 20%;
+
+            @include lg {
+                align-items: center;
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 0;
+                
+
+
+                li {
+
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 24px;
+                    text-align: right;
+
+
+                    @include lg {
+
+                        margin-bottom: 0;
+                        padding-top: 0;
+                        margin-left: 16px;
+                        padding-left: 24px;
+
 
                     }
+
                 }
+            }
+
+
+        }
+
+        a:link,
+        a:visited {
+
+            color: var(--dark-green);
+            display: inline-block;
+            padding-bottom: 32px;
+            font-size: rem-calc(20);
+
+            @include lg {
+                color: var(--light-pink);
+                font-size: rem-calc(24);
+            }
+
+            &:hover,
+            &:active {
+                color: var(--dark-pink);
+
+
             }
         }
     }
-
-
 }

@@ -8,7 +8,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    #logo-header{
+    #logo-container{
         display: flex;
         align-items: center;
         section{
@@ -81,13 +81,19 @@ header {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        @include lg{
+            display: none;
+        }
+
+        #burger-btn{
+            background-color: transparent;
+            color: var(--light-pink);
+            border: 1px solid red;
+            padding: 16px;
+        }
     }
 
-    #burger{
-        background-color: transparent;
-        color: var(--light-pink);
-        border: 1px solid red;
-        padding: 16px;
-    }
+
 
 }
