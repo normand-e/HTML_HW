@@ -84,6 +84,18 @@ footer {
 
     #locations {
         grid-area: locations;
+
+        //style phone numbers
+        a:link, a:visited{
+            color: #FFFFFF;
+            font-size: rem-calc(12);
+            
+
+            &:hover, &:active{
+                color: var(--light-pink);
+
+            }
+        }
         
 
     }
@@ -139,6 +151,17 @@ footer {
         section{
             display: flex;
             gap: 32px;
+
+            //social icon formatting
+            a:link, a:visited{
+                color: var(--light-pink);
+                
+
+                &:hover, &:active{
+                    color: var(--light-green);
+
+                }
+            }
         }
         @include lg {
             text-align: right;

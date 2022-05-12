@@ -493,6 +493,11 @@ textarea {
 /* =============
     Navigation
 ============= */
+a:link, a:visited {
+  text-decoration: none;
+  transition: 0.25s;
+}
+
 /* =============
     Header
 ============= */
@@ -622,6 +627,13 @@ footer ul li div section div > section {
 footer #locations {
   grid-area: locations;
 }
+footer #locations a:link, footer #locations a:visited {
+  color: #FFFFFF;
+  font-size: 0.75rem;
+}
+footer #locations a:link:hover, footer #locations a:link:active, footer #locations a:visited:hover, footer #locations a:visited:active {
+  color: var(--light-pink);
+}
 footer #newsletter {
   grid-area: newsletter;
 }
@@ -659,6 +671,12 @@ footer #socials {
 footer #socials section {
   display: flex;
   gap: 32px;
+}
+footer #socials section a:link, footer #socials section a:visited {
+  color: var(--light-pink);
+}
+footer #socials section a:link:hover, footer #socials section a:link:active, footer #socials section a:visited:hover, footer #socials section a:visited:active {
+  color: var(--light-green);
 }
 @media (min-width: 1024px) {
   footer #socials {
