@@ -28,6 +28,7 @@ body{
 }
 
 
+
 .base-grid{
 
     display: grid;
@@ -84,5 +85,17 @@ body{
             
         }
     
+    
+}
+
+.button-transitions{
+    button{
+        cursor: pointer;
+        &:hover{
+            background-color: var(--dark-pink);
+            
+            transition: 0.25s;
+        }
+    }
     
 }

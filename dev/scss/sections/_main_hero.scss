@@ -34,6 +34,8 @@
         color: var(--dark-green);
         display: flex;
         align-items: center;
+        cursor: pointer;
+        
     }
 
     h3 {
@@ -133,6 +135,7 @@
 
             @include lg {
                 display: block;
+                font-size: rem-calc(16);
 
 
 

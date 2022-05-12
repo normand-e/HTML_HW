@@ -5,6 +5,7 @@
 button{
     margin: 0;
     padding: 0;
+    
 }
 
 .standard-button{
@@ -12,4 +13,10 @@ button{
     border: none;
     color: var(--dark-green);
     padding: 6px 14px;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--dark-pink);
+        
+        transition: 0.25s;
+    }
 }

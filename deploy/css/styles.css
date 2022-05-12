@@ -433,6 +433,14 @@ body p {
   }
 }
 
+.button-transitions button {
+  cursor: pointer;
+}
+.button-transitions button:hover {
+  background-color: var(--dark-pink);
+  transition: 0.25s;
+}
+
 /* =============
     Typography
 ============= */
@@ -457,6 +465,11 @@ button {
   border: none;
   color: var(--dark-green);
   padding: 6px 14px;
+  cursor: pointer;
+}
+.standard-button:hover {
+  background-color: var(--dark-pink);
+  transition: 0.25s;
 }
 
 /* =============
@@ -955,6 +968,7 @@ h2 {
   color: var(--dark-green);
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 #main-hero h3 {
   font-size: 1.125rem;
@@ -1022,6 +1036,7 @@ h2 {
 @media (min-width: 1024px) {
   .hide-details button span {
     display: block;
+    font-size: 1rem;
   }
 }
 .hide-details button img {
@@ -1061,6 +1076,11 @@ h2 {
   background-color: var(--light-pink);
   border: none;
   padding: 6px 10px 4px;
+  cursor: pointer;
+}
+#search div button:hover {
+  background-color: var(--dark-pink);
+  transition: 0.25s;
 }
 @media (min-width: 768px) {
   #search div button {

@@ -3,8 +3,9 @@
 ============= */
 #search {
     margin: 24px 0;
+
     div {
-    
+
         display: flex;
 
         input {
@@ -37,6 +38,15 @@
             background-color: var(--light-pink);
             border: none;
             padding: 6px 10px 4px;
+
+            //coutldn't use .button-transitions because was getting overwritten
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--dark-pink);
+
+                transition: 0.25s;
+            }
 
             @include md {
                 padding: 10px 16px 8px;
