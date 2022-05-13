@@ -548,18 +548,20 @@ nav aside button {
 nav section {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 10vh;
 }
-nav section ul {
-  height: 100%;
-  padding-top: 20%;
+@media (min-width: 1024px) {
+  nav section {
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+    align-items: center;
+  }
 }
 @media (min-width: 1024px) {
   nav section ul {
-    align-items: center;
     display: flex;
     justify-content: flex-end;
-    padding-top: 0;
   }
   nav section ul li {
     display: flex;
@@ -1206,7 +1208,7 @@ h2 {
 }
 @media (min-width: 1024px) {
   #search {
-    margin-top: 135px;
+    margin-top: 175px;
   }
 }
 #search div {

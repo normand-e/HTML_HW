@@ -15,6 +15,9 @@ ul {
     padding: 0;
 }
 
+
+
+
 nav {
     display: none;
     background-color: var(--light-pink);
@@ -50,19 +53,33 @@ nav {
     section {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 10vh;
+
+        @include lg{
+            margin-top: 4vh;
+            margin-bottom: 3vh;
+            align-items: center;
+        }
+        
+        
 
 
         ul {
 
-            height: 100%;
-            padding-top: 20%;
+            // height: 100%;
+            // padding-top: 20%;
 
             @include lg {
-                align-items: center;
+                
                 display: flex;
                 justify-content: flex-end;
-                padding-top: 0;
+                
+                
+            
+                
+               
+                
                 
 
 
@@ -80,6 +97,7 @@ nav {
                         padding-top: 0;
                         margin-left: 16px;
                         padding-left: 24px;
+                        
 
 
                     }
@@ -112,3 +130,4 @@ nav {
         }
     }
 }
+
