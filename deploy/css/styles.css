@@ -567,14 +567,13 @@ nav section {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 24px;
-    text-align: right;
+    text-align: center;
   }
 }
 @media (min-width: 1024px) and (min-width: 1024px) {
   nav section ul li {
     margin-bottom: 0;
     padding-top: 0;
-    margin-left: 16px;
     padding-left: 24px;
   }
 }
