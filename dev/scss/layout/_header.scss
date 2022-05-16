@@ -83,18 +83,22 @@ header {
         justify-content: flex-end;
         align-items: center;
 
+        
+
         @include lg{
             display: none;
         }
 
-        #burger-btn{
-            background-color: transparent;
-            color: var(--light-pink);
-            border: 1px solid red;
-            padding: 16px;
-        }
+        
     }
 
 
-
+    #burger-btn{
+        // background: none;
+        // border: none;
+        border: 1px solid var(--dark-green);
+        padding: 16px;
+        color: var(--light-pink);
+        
+    }
 }
