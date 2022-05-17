@@ -26,7 +26,7 @@ nav {
     position: fixed;
     right: 0;
     top: 0;
-    width: 50vw;
+    width: 70vw;
     box-sizing: border-box;
 
     @include lg {
@@ -53,62 +53,56 @@ nav {
     section {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-content: flex-start;
+    
         margin-top: 10vh;
 
-        @include lg{
-            margin-top: 4vh;
+        @include lg {
+            
+            margin-top: 5vh;
             margin-bottom: 3vh;
-            align-items: center;
+            margin-right: 2vw;
+            justify-content: flex-end;
+            
+
+
         }
-        
-        
+
+
 
 
         ul {
 
             @include lg {
-                
+
                 display: flex;
                 justify-content: flex-end;
-              
                 
-                
-            
+
+
             }
-               
+
+            li {
+
+                display: flex;
+                justify-content: flex-end;
                 
-                
 
 
-                li {
-
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-bottom: 24px;
-                    text-align: center;
+                @include lg {
                     
-
-
-                    @include lg {
-
-                        margin-bottom: 0;
-                        padding-top: 0;
-                        padding-left: 24px;
-                        
-                        
-                        
-                        
-
-
-                    }
+                    margin-bottom: 0;
+                    padding-top: 0;
+                    padding-left: 25px;
 
                 }
-            
 
+            }
 
         }
 
+
+        
         a:link,
         a:visited {
 
@@ -131,4 +125,3 @@ nav {
         }
     }
 }
-

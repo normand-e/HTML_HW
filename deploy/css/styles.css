@@ -523,7 +523,7 @@ nav {
   position: fixed;
   right: 0;
   top: 0;
-  width: 50vw;
+  width: 70vw;
   box-sizing: border-box;
 }
 @media (min-width: 1024px) {
@@ -548,14 +548,15 @@ nav aside button {
 nav section {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: flex-start;
   margin-top: 10vh;
 }
 @media (min-width: 1024px) {
   nav section {
-    margin-top: 4vh;
+    margin-top: 5vh;
     margin-bottom: 3vh;
-    align-items: center;
+    margin-right: 2vw;
+    justify-content: flex-end;
   }
 }
 @media (min-width: 1024px) {
@@ -567,14 +568,12 @@ nav section {
 nav section ul li {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 24px;
-  text-align: center;
 }
 @media (min-width: 1024px) {
   nav section ul li {
     margin-bottom: 0;
     padding-top: 0;
-    padding-left: 24px;
+    padding-left: 25px;
   }
 }
 nav section a:link,
@@ -678,6 +677,7 @@ header #burger-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  align-content: center;
 }
 @media (min-width: 1024px) {
   header #burger-container {
@@ -685,7 +685,8 @@ header #burger-container {
   }
 }
 header #burger-btn {
-  border: 1px solid var(--dark-green);
+  background: none;
+  border: none;
   padding: 16px;
   color: var(--light-pink);
 }
@@ -998,7 +999,7 @@ aside img {
   #second-gallery {
     width: 40vw;
     height: 30vw;
-    background-position: 50% 100%;
+    background-position: 20% 50%;
   }
 }
 
@@ -1206,7 +1207,7 @@ h2 {
 }
 @media (min-width: 1024px) {
   #search {
-    margin-top: 175px;
+    margin-top: 140px;
   }
 }
 #search div {
